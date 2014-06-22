@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0533D6195573C80087B082 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0533D5195573C80087B082 /* Utility.swift */; };
+		BAD7ECE3195407F7009DB43E /* KonachanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7ECE2195407F7009DB43E /* KonachanController.swift */; };
+		BAD7ECEB1954963C009DB43E /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD7ECEA1954963C009DB43E /* Preferences.xib */; };
+		BAD7ECEF19549913009DB43E /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7ECEE19549913009DB43E /* PreferencesController.swift */; };
+		BAF80A371952B54E00C745DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF80A361952B54E00C745DB /* main.swift */; };
+		BAF80A391952B54E00C745DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF80A381952B54E00C745DB /* AppDelegate.swift */; };
+		BAF80A3B1952B54E00C745DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF80A3A1952B54E00C745DB /* Images.xcassets */; };
+		BAF80A3E1952B54E00C745DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF80A3C1952B54E00C745DB /* MainMenu.xib */; };
+		BAF80A4A1952B54E00C745DB /* KonachanFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF80A491952B54E00C745DB /* KonachanFrameTests.swift */; };
+		BAF80A541952B58300C745DB /* Konachan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF80A531952B58300C745DB /* Konachan.swift */; };
+		BAF80A621952F51900C745DB /* KonachanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF80A611952F51900C745DB /* KonachanView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF80A441952B54E00C745DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF80A291952B54E00C745DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF80A301952B54E00C745DB;
+			remoteInfo = KonachanFrame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA0533D5195573C80087B082 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BAD7ECE2195407F7009DB43E /* KonachanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KonachanController.swift; sourceTree = "<group>"; };
+		BAD7ECEA1954963C009DB43E /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		BAD7ECEE19549913009DB43E /* PreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesController.swift; sourceTree = "<group>"; };
+		BAF80A311952B54E00C745DB /* KonachanFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KonachanFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF80A351952B54E00C745DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF80A361952B54E00C745DB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BAF80A381952B54E00C745DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAF80A3A1952B54E00C745DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAF80A3D1952B54E00C745DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BAF80A431952B54E00C745DB /* KonachanFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonachanFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF80A481952B54E00C745DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF80A491952B54E00C745DB /* KonachanFrameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonachanFrameTests.swift; sourceTree = "<group>"; };
+		BAF80A531952B58300C745DB /* Konachan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Konachan.swift; sourceTree = "<group>"; };
+		BAF80A611952F51900C745DB /* KonachanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KonachanView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF80A2E1952B54E00C745DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF80A401952B54E00C745DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAF80A281952B54E00C745DB = {
+			isa = PBXGroup;
+			children = (
+				BAF80A331952B54E00C745DB /* KonachanFrame */,
+				BAF80A461952B54E00C745DB /* KonachanFrameTests */,
+				BAF80A321952B54E00C745DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF80A321952B54E00C745DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF80A311952B54E00C745DB /* KonachanFrame.app */,
+				BAF80A431952B54E00C745DB /* KonachanFrameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF80A331952B54E00C745DB /* KonachanFrame */ = {
+			isa = PBXGroup;
+			children = (
+				BAF80A381952B54E00C745DB /* AppDelegate.swift */,
+				BAF80A3A1952B54E00C745DB /* Images.xcassets */,
+				BAF80A3C1952B54E00C745DB /* MainMenu.xib */,
+				BAF80A341952B54E00C745DB /* Supporting Files */,
+				BAF80A531952B58300C745DB /* Konachan.swift */,
+				BAF80A611952F51900C745DB /* KonachanView.swift */,
+				BAD7ECE2195407F7009DB43E /* KonachanController.swift */,
+				BAD7ECEA1954963C009DB43E /* Preferences.xib */,
+				BAD7ECEE19549913009DB43E /* PreferencesController.swift */,
+				BA0533D5195573C80087B082 /* Utility.swift */,
+			);
+			path = KonachanFrame;
+			sourceTree = "<group>";
+		};
+		BAF80A341952B54E00C745DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF80A351952B54E00C745DB /* Info.plist */,
+				BAF80A361952B54E00C745DB /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAF80A461952B54E00C745DB /* KonachanFrameTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF80A491952B54E00C745DB /* KonachanFrameTests.swift */,
+				BAF80A471952B54E00C745DB /* Supporting Files */,
+			);
+			path = KonachanFrameTests;
+			sourceTree = "<group>";
+		};
+		BAF80A471952B54E00C745DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF80A481952B54E00C745DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF80A301952B54E00C745DB /* KonachanFrame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF80A4D1952B54E00C745DB /* Build configuration list for PBXNativeTarget "KonachanFrame" */;
+			buildPhases = (
+				BAF80A2D1952B54E00C745DB /* Sources */,
+				BAF80A2E1952B54E00C745DB /* Frameworks */,
+				BAF80A2F1952B54E00C745DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KonachanFrame;
+			productName = KonachanFrame;
+			productReference = BAF80A311952B54E00C745DB /* KonachanFrame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF80A421952B54E00C745DB /* KonachanFrameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF80A501952B54E00C745DB /* Build configuration list for PBXNativeTarget "KonachanFrameTests" */;
+			buildPhases = (
+				BAF80A3F1952B54E00C745DB /* Sources */,
+				BAF80A401952B54E00C745DB /* Frameworks */,
+				BAF80A411952B54E00C745DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF80A451952B54E00C745DB /* PBXTargetDependency */,
+			);
+			name = KonachanFrameTests;
+			productName = KonachanFrameTests;
+			productReference = BAF80A431952B54E00C745DB /* KonachanFrameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF80A291952B54E00C745DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Tsukasa OMOTO";
+				TargetAttributes = {
+					BAF80A301952B54E00C745DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					BAF80A421952B54E00C745DB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = BAF80A301952B54E00C745DB;
+					};
+				};
+			};
+			buildConfigurationList = BAF80A2C1952B54E00C745DB /* Build configuration list for PBXProject "KonachanFrame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF80A281952B54E00C745DB;
+			productRefGroup = BAF80A321952B54E00C745DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF80A301952B54E00C745DB /* KonachanFrame */,
+				BAF80A421952B54E00C745DB /* KonachanFrameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF80A2F1952B54E00C745DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF80A3B1952B54E00C745DB /* Images.xcassets in Resources */,
+				BAD7ECEB1954963C009DB43E /* Preferences.xib in Resources */,
+				BAF80A3E1952B54E00C745DB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF80A411952B54E00C745DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF80A2D1952B54E00C745DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0533D6195573C80087B082 /* Utility.swift in Sources */,
+				BAD7ECEF19549913009DB43E /* PreferencesController.swift in Sources */,
+				BAF80A541952B58300C745DB /* Konachan.swift in Sources */,
+				BAF80A391952B54E00C745DB /* AppDelegate.swift in Sources */,
+				BAD7ECE3195407F7009DB43E /* KonachanController.swift in Sources */,
+				BAF80A621952F51900C745DB /* KonachanView.swift in Sources */,
+				BAF80A371952B54E00C745DB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF80A3F1952B54E00C745DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF80A4A1952B54E00C745DB /* KonachanFrameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF80A451952B54E00C745DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF80A301952B54E00C745DB /* KonachanFrame */;
+			targetProxy = BAF80A441952B54E00C745DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAF80A3C1952B54E00C745DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF80A3D1952B54E00C745DB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF80A4B1952B54E00C745DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAF80A4C1952B54E00C745DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BAF80A4E1952B54E00C745DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KonachanFrame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAF80A4F1952B54E00C745DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KonachanFrame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAF80A511952B54E00C745DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KonachanFrame.app/Contents/MacOS/KonachanFrame";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KonachanFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		BAF80A521952B54E00C745DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KonachanFrame.app/Contents/MacOS/KonachanFrame";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KonachanFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF80A2C1952B54E00C745DB /* Build configuration list for PBXProject "KonachanFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF80A4B1952B54E00C745DB /* Debug */,
+				BAF80A4C1952B54E00C745DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF80A4D1952B54E00C745DB /* Build configuration list for PBXNativeTarget "KonachanFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF80A4E1952B54E00C745DB /* Debug */,
+				BAF80A4F1952B54E00C745DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF80A501952B54E00C745DB /* Build configuration list for PBXNativeTarget "KonachanFrameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF80A511952B54E00C745DB /* Debug */,
+				BAF80A521952B54E00C745DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF80A291952B54E00C745DB /* Project object */;
+}
