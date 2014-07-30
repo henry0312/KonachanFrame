@@ -28,8 +28,8 @@ import Cocoa
 
 class PreferencesController: NSWindowController {
 
-    @IBOutlet var textField : NSTextField
-    @IBOutlet var slider : NSSlider
+    @IBOutlet var textField : NSTextField!
+    @IBOutlet var slider : NSSlider!
     var timeInterval: Double!
 
     init(window: NSWindow?) {

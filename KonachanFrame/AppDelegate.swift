@@ -28,8 +28,8 @@ import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet var window: NSWindow
-    @IBOutlet var konachanView : KonachanView
+    @IBOutlet var window: NSWindow!
+    @IBOutlet var konachanView : KonachanView!
     var konachanController: KonachanController!
     var preferencesController: PreferencesController!
 
@@ -64,7 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let jpegUrl = konachanController.konachan.jpegUrl {
             let pasteboard = NSPasteboard.generalPasteboard()
             pasteboard.clearContents()
-            pasteboard.writeObjects([jpegUrl] as AnyObject[])
+            pasteboard.writeObjects([jpegUrl] as [AnyObject])
         }
     }
 
@@ -84,7 +84,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
                 var imageData = self.konachanView.imageView.image.TIFFRepresentation
                 if let imageRep = NSBitmapImageRep.imageRepsWithData(imageData)[0] as? NSBitmapImageRep {
-                    let imageProps = NSDictionary(objects: [1.0] as AnyObject[], forKeys: [NSImageCompressionFactor] as AnyObject[])
+                    let imageProps = NSDictionary(objects: [1.0] as [AnyObject], forKeys: [NSImageCompressionFactor] as [AnyObject])
                     imageData = imageRep.representationUsingType(NSBitmapImageFileType.NSJPEGFileType, properties: imageProps)
                     if !imageData.writeToFile(fileName.path, atomically: true) {
                         // TODO: error handling
