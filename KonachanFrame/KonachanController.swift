@@ -32,7 +32,7 @@ class KonachanController: NSObject {
     var timer: NSTimer!
     var timeInterval: Double = 300  // seconds
 
-    init() {
+    override init() {
         super.init()
 #if DEBUG
         println("KonachanController")
@@ -48,7 +48,8 @@ class KonachanController: NSObject {
         konachan.fetch()
         if let jpegUrl = konachan.jpegUrl {
             let image = NSImage(contentsOfURL: NSURL.URLWithString(jpegUrl))
-            let konachanView = (NSApp.delegate as AppDelegate).konachanView
+            let konachanView = (NSApplication.sharedApplication().delegate as AppDelegate).konachanView
+            //let konachanView = (NSApp.delegate as AppDelegate).konachanView
             konachanView.update(image)
         }
     }

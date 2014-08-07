@@ -30,7 +30,11 @@ class KonachanView: NSView {
 
     let imageView: NSImageView!
 
-    init(frame: NSRect) {
+    required init(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
+    override init(frame: NSRect) {
         super.init(frame: frame)
         // Initialization code here.
 #if DEBUG
@@ -47,8 +51,8 @@ class KonachanView: NSView {
         // Drawing code here.
         NSColor.blackColor().setFill()
         NSRectFill(dirtyRect)
-        let windowWidth = self.window.frame.width
-        let windowHeight = self.window.frame.height
+        let windowWidth = self.window!.frame.width
+        let windowHeight = self.window!.frame.height
         imageView.frame = NSRect(x: 0, y: 0, width: windowWidth, height: windowHeight)
         imageView.setNeedsDisplay()
     }

@@ -51,7 +51,7 @@ class Konachan {
         var error: NSError?
         if let data = NSURLConnection.sendSynchronousRequest(req, returningResponse: nil, error: &error) {
             let json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &error) as NSArray
-            if error {
+            if error != nil {
                 // TODO: error handling
                 println(error)
             }
