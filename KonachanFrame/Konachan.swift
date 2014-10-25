@@ -38,12 +38,12 @@ class Konachan {
     var md5: String?
 
     init() {
-        url = NSURL.URLWithString("http://konachan.net/post.json?limit=1&tags=order%3Arandom")
+        url = NSURL(string: "http://konachan.net/post.json?limit=1&tags=order%3Arandom")!
         req = NSURLRequest(URL: url)
     }
 
     init(URLString: String) {
-        self.url = NSURL.URLWithString(URLString)
+        self.url = NSURL(string: URLString)!
         self.req = NSURLRequest(URL: self.url)
     }
 

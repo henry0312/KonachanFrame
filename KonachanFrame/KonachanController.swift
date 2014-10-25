@@ -47,10 +47,10 @@ class KonachanController: NSObject {
 #endif
         konachan.fetch()
         if let jpegUrl = konachan.jpegUrl {
-            let image = NSImage(contentsOfURL: NSURL.URLWithString(jpegUrl))
+            let image = NSImage(contentsOfURL: NSURL(string: jpegUrl)!)
             let konachanView = (NSApplication.sharedApplication().delegate as AppDelegate).konachanView
             //let konachanView = (NSApp.delegate as AppDelegate).konachanView
-            konachanView.update(image)
+            konachanView.update(image!)
         }
     }
 

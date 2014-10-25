@@ -30,7 +30,7 @@ class KonachanView: NSView {
 
     let imageView: NSImageView!
 
-    required init(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
 
@@ -59,7 +59,7 @@ class KonachanView: NSView {
 
     func update(image: NSImage) {
         imageView.image = image
-        imageView.image.cacheMode = NSImageCacheMode.Always
+        imageView.image!.cacheMode = NSImageCacheMode.Always
         imageView.setNeedsDisplay()
     }
 }

@@ -74,18 +74,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func save(sender : AnyObject) {
         let panel = NSSavePanel()
         // default file name is original file name
-        panel.nameFieldStringValue = NSURL.URLWithString(konachanController.konachan.jpegUrl!).lastPathComponent
+        panel.nameFieldStringValue = NSURL(string: konachanController.konachan.jpegUrl!)!.lastPathComponent
         panel.beginWithCompletionHandler({result in
             if NSFileHandlingPanelOKButton == result {
-                var fileName = panel.URL
+                var fileName = panel.URL!
                 if fileName.pathExtension != "jpg" {
                    fileName = fileName.URLByDeletingPathExtension!.URLByAppendingPathExtension("jpg")
                 }
 
-                var imageData = self.konachanView.imageView.image.TIFFRepresentation
+                var imageData = self.konachanView.imageView.image!.TIFFRepresentation!
                 if let imageRep = NSBitmapImageRep.imageRepsWithData(imageData)[0] as? NSBitmapImageRep {
                     let imageProps = NSDictionary(objects: [1.0] as [AnyObject], forKeys: [NSImageCompressionFactor] as [AnyObject])
-                    imageData = imageRep.representationUsingType(NSBitmapImageFileType.NSJPEGFileType, properties: imageProps)
+                    imageData = imageRep.representationUsingType(NSBitmapImageFileType.NSJPEGFileType, properties: imageProps)!
                     if !imageData.writeToFile(fileName.path!, atomically: true) {
                         // TODO: error handling
                         println("save error")

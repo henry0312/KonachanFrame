@@ -28,7 +28,7 @@ import Foundation
 
 extension NSDate {
     class func stringNow() -> String! {
-        let now = NSDate.date()
+        let now = NSDate()
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return formatter.stringFromDate(now)

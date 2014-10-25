@@ -42,7 +42,7 @@ class PreferencesController: NSWindowController {
      * http://stackoverflow.com/questions/24220638/subclassing-nswindowcontroller-in-swift-and-initwindownibname
      */
     override init() { super.init() }
-    required init(coder: NSCoder!) { super.init(coder: coder) }
+    required init?(coder: NSCoder) { super.init(coder: coder) }
 
     override func windowDidLoad() {
         super.windowDidLoad()
